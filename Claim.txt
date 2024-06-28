@@ -1,0 +1,85 @@
+** Title:Claim **
+
+**Author: Krrish Raj**
+
+**Roll Number: 2201CS41**
+
+**Declaration of Authorship:**
+
+I, Krrish Raj , declare that this document and all associated files, including asm.cpp, emu.cpp, and claims.txt, 
+are part of the miniproject submitted for CS210 at the Department of Computer Science and Engineering, IIT Patna.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Authorship Declaration:**
+
+All files submitted, including asm.cpp, emu.cpp, and claims.txt, bear my name and student ID at the beginning, along with a declaration of authorship.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Assembler Evidence:**
+
+Evidence for the Assembler includes output files from 4 test examples and 2 algorithms. The tests include:
+
+- For Assembler: test (memcpy) with 2 output files, test1 with 2 output files, test2 with 1 output file, and test4 with 2 output files. Additionally, 
+bubble with 2 output files.
+
+- For Emulator: test with 2 output files, test3 with 2 output files, bubble with 2 output files.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Compilation Verification:**
+
+Both C++ programs compiled without errors or warnings using g++. Compilation commands were: `g++ asm.cpp -o asm` and `g++ emu.cpp -o emu`.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Program Structure:**
+
+**Assembler:**
+- Utilizes four data structures to store labels, opcodes, operands, and a mnemonic table with expected operands.
+- Uses a single routine for both passes.
+- Detects label errors.
+- Exhibits consistent and sensible formatting with a logical program structure.
+- Employs sensible variable, function, and type names with explanatory comments.
+- Creates an advanced listing file and binary file if no errors occur.
+- Generates a log file if an error occurs.
+- Assembles all 4 test programs.
+- Detects warnings such as infinite loops and unused HALT instructions.
+- Implements and demonstrates the instruction SET (test3).
+
+**Emulator:**
+- Utilizes two data structures to store memory and opcodes with operands respectively.
+- Loads object files generated from the assembler.
+- Provides options to create trace files or memory dump files or exit the loop.
+- Option 1 creates a trace file, option 2 creates a memory file, and option 3 terminates the program.
+- Detects errant programs.
+- Detects unused HALT errors and displays them in the terminal.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Testing:**
+
+**Assembler:**
+
+- 4 examples were tested, with errors only occurring in test2.asm. test1 and test3 executed with WARNINGS.
+- All others were tested without any errors detected and produced two output files, a listing file, and a machine-readable object file, for each example.
+
+**Emulator:**
+
+- 2 examples were tested, with errors only occurring in test1.o, where the program immediately stopped. test3.o executed with a warning of "WARNING: No HALT,
+ exit program due to end of file."
+
+- All others were tested without any errors detected and produced execution data both on the screen and in an output text file for each example according to the usage instruction.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Algorithm Testing:**
+
+**Assembler:**
+- 2 codes were tested, with both examples producing two output files, a listing file, and a machine-readable object file, for each example.
+
+**Emulator:**
+- 2 codes were tested, with all examples producing execution data both on the screen and in an output text file for each example according to the usage instruction. 
+The trace data matched the implemented result from the program.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
